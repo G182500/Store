@@ -81,7 +81,7 @@ export default function MenuItem(props: MenuItemProps) {
             <a
               key={`${props.name}_subItem${index}`}
               href={subItem[1]}
-              className="text-[12px] sm:text-sm block pl-4 pr-8 py-2 text-white hover:bg-[#3f4241]"
+              className="text-[12px] sm:text-sm block pl-4 pr-10 py-2 text-white hover:bg-[#3f4241]"
             >
               {subItem[0]}
             </a>
