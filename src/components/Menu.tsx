@@ -19,9 +19,9 @@ export default function Menu() {
       id="sideMenu"
     >
       <div className="flex flex-row lg:flex-col justify-between lg:justify-center w-full items-center gap-4 lg:p-3">
-        <button className="flex w-[20%] lg:w-full justify-center">
+        <Link href="/" className="flex w-[20%] lg:w-full justify-center">
           <Image src={logo.src} alt="Logo Loja" height={150} width={150} />
-        </button>
+        </Link>
 
         <div className="hidden lg:block w-full">
           <span className="text-xs font-semibold opacity-50 mb-2 text-white">
@@ -56,7 +56,7 @@ export default function Menu() {
 
           <div className="flex flex-row gap-6 mx-4">
             <Link
-              href="/cadastro"
+              href=""
               className="flex flex-row font-semibold gap-2 items-center"
             >
               <label className="hidden sm:block text-sm text-white hover:cursor-pointer">
@@ -66,7 +66,7 @@ export default function Menu() {
             </Link>
 
             <Link
-              href=""
+              href="/carrinho"
               className="flex flex-row font-semibold gap-2 items-center"
             >
               <label className="hidden sm:block text-sm text-white hover:cursor-pointer">

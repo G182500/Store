@@ -103,7 +103,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col lg:ml-64 bg-[#000000] p-4 lg:p-6 gap-6">
+    <div className="flex flex-col lg:ml-64 p-4 lg:p-6 gap-6">
       <div className="hidden lg:flex justify-between">
         <div className="w-[48%]">
           <input
@@ -113,7 +113,7 @@ export default function Home() {
         </div>
         <div className="flex flex-row gap-10 mx-4">
           <Link
-            href="/cadastro"
+            href=""
             className="flex flex-row font-semibold gap-2 items-center"
           >
             <label className="text-white hover:cursor-pointer">Login</label>
@@ -121,7 +121,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href=""
+            href="/carrinho"
             className="flex flex-row font-semibold gap-2 items-center"
           >
             <label className="text-white hover:cursor-pointer">

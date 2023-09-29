@@ -25,7 +25,7 @@ export default function Carousel({ children }: Props) {
     return () => {
       emblaApi?.off("select", selectHandler);
     };
-  }, [emblaApi]); //emblaApi será monitorado pelo useEffect, sempre que mudar, a func será exec
+  }, [emblaApi]);
 
   const length = React.Children.count(children);
 
