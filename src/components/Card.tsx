@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 interface CardProps {
   titulo: string;
   produtos: Product[];
+  preview: boolean;
 }
 
 export default function Card(props: CardProps) {
@@ -38,16 +39,20 @@ export default function Card(props: CardProps) {
   let showAll = "";
   let produtosExibidos = [];
 
-  for (let i = 0; i < props.produtos.length; i++) {
-    const produto = props.produtos[i];
-    if (props.titulo.includes(produto.tipo)) {
-      if (produtosExibidos.length < maxItens) {
-        produtosExibidos.push(produto);
-      } else {
-        showAll = "Mostrar tudo";
-        break; //For é usado para otimizar o carregamento, ao invés de um .map()
+  if (props.preview == true) {
+    for (let i = 0; i < props.produtos.length; i++) {
+      const produto = props.produtos[i];
+      if (props.titulo.includes(produto.tipo)) {
+        if (produtosExibidos.length < maxItens) {
+          produtosExibidos.push(produto);
+        } else {
+          showAll = "Mostrar tudo";
+          break; //For é usado para otimizar o carregamento, ao invés de um .map()
+        }
       }
     }
+  } else {
+    produtosExibidos = props.produtos;
   }
 
   return (

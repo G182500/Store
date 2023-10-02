@@ -132,8 +132,8 @@ export default function Home() {
         </div>
       </div>
 
-      <Card titulo="Camisetas" produtos={camisetas} />
-      <Card titulo="Discos Compactos" produtos={cds} />
+      <Card titulo="Camisetas" produtos={camisetas} preview={true} />
+      <Card titulo="Discos Compactos" produtos={cds} preview={true} />
     </div>
   );
 }
