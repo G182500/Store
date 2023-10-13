@@ -2,6 +2,7 @@
 import Product from "@/model/Product";
 import ProductItem from "@/components/ProductItem";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface CardProps {
   titulo: string;
@@ -61,12 +62,12 @@ export default function Card(props: CardProps) {
         <div className="text-xl font-semibold pl-2 text-white">
           {props.titulo}
         </div>
-        <a
-          href=""
-          className="text-xs font-semibold text-[#8f9290] hover:text-white hover:underline underline-offset-4 hover:cursor-pointer"
-        >
-          {showAll}
-        </a>
+        {/*Rota dinâmica: [tipo]/page.tsx */}
+        <Link href={`/${props.titulo}`}>
+          <label className="text-xs font-semibold text-[#8f9290] hover:text-white hover:underline underline-offset-4 hover:cursor-pointer">
+            {showAll}
+          </label>
+        </Link>
       </div>
       <div className="grid grid-cols-2 justify-start p-4 gap-6 w-full sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
         {produtosExibidos.map((produto) => {

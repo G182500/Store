@@ -28,7 +28,7 @@ export default function MenuItem(props: MenuItemProps) {
       {props.subItens && (
         <button
           onClick={toggleDropdown}
-          className="flex flex-row bg-[#2b2e2d] p-3 w-full text-white rounded-md justify-between items-center h-full gap-4"
+          className="flex flex-row bg-[#2b2e2d] p-3 w-full text-white rounded-md justify-between items-center h-full gap-2"
         >
           <span className="text-[12px] sm:text-sm">{props.name}</span>
           <svg

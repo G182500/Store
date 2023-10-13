@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+"use client";
+
 import Card from "@/components/Card";
 
 import sehnsucht from "../../images/sehnsucht.jpg";
@@ -9,7 +10,7 @@ import theNumber from "../../images/numberBeast.jpg";
 import atonement from "../../images/atonement.jpg";
 import zeit from "../../images/zeit.jpg";
 
-export default function ShowAll() {
+export default function ShowAll({ params }: { params: { tipo: string } }) {
   const cds = [
     {
       id: 1,
@@ -76,20 +77,11 @@ export default function ShowAll() {
     },
   ];
 
-  useEffect(() => {
-    async function getPageData() {
-      const apiUrlEndpoint = `http://localhost:3000/api/products/getProduct`;
-      const response = await fetch(apiUrlEndpoint);
-      const res = await response.json();
-      console.log(res);
-    }
-    getPageData();
-  }, []);
+  console.log(params.tipo);
 
   return (
     <div className="flex flex-col lg:ml-64 p-4 lg:p-6 gap-6">
-      <Card titulo="Discos Compactos" produtos={cds} preview={false} />
-      Deixar que a URL informe qual a categoria(titulo) que deve ser exibida
+      <Card titulo="Discos Compactados" produtos={cds} preview={false} />
     </div>
   );
 }
