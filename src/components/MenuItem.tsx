@@ -17,27 +17,21 @@ export default function MenuItem(props: MenuItemProps) {
 
   return (
     <div>
-      {props.href && (
+      {props.href ? (
         <a href={props.href}>
           <button className="flex flex-row bg-[#2b2e2d] hover:bg-[#3f4241] p-3 w-full text-white rounded-md h-full">
             <span className="text-[12px] sm:text-sm">{props.name}</span>
           </button>
         </a>
-      )}
-
-      {props.subItens && (
+      ) : (
         <button
           onClick={toggleDropdown}
-          className="flex flex-row bg-[#2b2e2d] p-3 w-full text-white rounded-md justify-between items-center h-full gap-2"
+          className="flex flex-row bg-[#2b2e2d] p-3 w-full text-white rounded-md justify-between items-center gap-2"
         >
           <span className="text-[12px] sm:text-sm">{props.name}</span>
           <svg
             id="arrow-down"
-            className={
-              isDropdownVisible
-                ? "hidden"
-                : "w-4 h-4 md:w-5 md:h-5 stroke-current"
-            }
+            className={isDropdownVisible ? "hidden" : "w-5 h-5 stroke-current"}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
           >
@@ -51,11 +45,7 @@ export default function MenuItem(props: MenuItemProps) {
 
           <svg
             id="arrow-up"
-            className={
-              isDropdownVisible
-                ? "w-4 h-4 md:w-5 md:h-5 stroke-current"
-                : "hidden"
-            }
+            className={isDropdownVisible ? "w-5 h-5 stroke-current" : "hidden"}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
           >
