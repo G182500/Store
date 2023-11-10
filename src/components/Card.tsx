@@ -49,7 +49,7 @@ export default function Card(props: CardProps) {
           produtosExibidos.push(produto);
         } else {
           showAll = "Mostrar tudo";
-          break; //For é usado para otimizar o carregamento, ao invés de um .forEach()
+          break;
         }
       }
     }
@@ -60,8 +60,8 @@ export default function Card(props: CardProps) {
   return (
     <div className="rounded-md border-8 border-[#1b1b1b] bg-[#1b1b1b] w-full">
       <div className="flex flex-wrap justify-between items-center p-2 w-full">
-        <div className="text-xl font-semibold pl-2 text-white">
-          {props.titulo}
+        <div className="text-lg font-semibold pl-2 text-white">
+          {props.titulo.toUpperCase()}
         </div>
         {/*Rota dinâmica: [tipo]/page.tsx */}
         <Link href={`/${props.titulo}`}>
