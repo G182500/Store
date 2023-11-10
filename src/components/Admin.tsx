@@ -16,7 +16,7 @@ export default function Admin() {
       </Link>
 
       <Link
-        href="/stock-edit"
+        href="/stock"
         className="flex flex-row font-semibold gap-1 items-center justify-center"
       >
         <FaCubes size="20px" />

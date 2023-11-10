@@ -1,7 +1,7 @@
 import Card from "@/components/Card";
 import { promises as fs } from "fs";
 
-export default async function ShowAll({
+export default async function ViewAll({
   params,
 }: {
   params: { tipo: string };
@@ -15,12 +15,10 @@ export default async function ShowAll({
   const data = JSON.parse(file);
 
   return (
-    <>
-      <Card
-        titulo={params.tipo.replace("%20", " ")}
-        produtos={data}
-        preview={false}
-      />
-    </>
+    <Card
+      titulo={params.tipo.replace("%20", " ")}
+      produtos={data}
+      preview={false}
+    />
   );
 }

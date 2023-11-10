@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Product from "@/model/Product";
+import Product from "@/models/Product";
 
 interface ProdutoProps {
   produto: Product;

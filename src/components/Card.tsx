@@ -1,5 +1,5 @@
 "use client";
-import Product from "@/model/Product";
+import Product from "@/models/Product";
 import ProductItem from "@/components/ProductItem";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -63,8 +63,8 @@ export default function Card(props: CardProps) {
         <div className="text-lg font-semibold pl-2 text-white">
           {props.titulo.toUpperCase()}
         </div>
-        {/*Rota dinâmica: [tipo]/page.tsx */}
-        <Link href={`/${props.titulo}`}>
+        {/*Rota dinâmica: view-all/[tipo]/page.tsx */}
+        <Link href={`/view-all/${props.titulo}`}>
           <label className="text-xs font-semibold text-[#8f9290] hover:text-white hover:underline underline-offset-4 hover:cursor-pointer">
             {showAll}
           </label>

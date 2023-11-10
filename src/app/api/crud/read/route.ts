@@ -1,6 +1,6 @@
 import { promises as fs } from "fs"; //read a JSON file
-import Product from "@/model/Product";
-import User from "@/model/User";
+import Product from "@/models/Product";
+import User from "@/models/User";
 
 export async function POST(req: Request) {
   if (req.body) {

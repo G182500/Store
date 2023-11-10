@@ -82,7 +82,7 @@ export default function Menu() {
           </Link>
 
           <Link
-            href="/stock-edit"
+            href="/stock-view"
             className="flex flex-row font-semibold gap-1 items-center justify-center"
           >
             <FaCubes size="20px" />
