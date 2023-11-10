@@ -3,7 +3,7 @@ import {
   FaInstagram,
   FaWhatsapp,
   FaUsers,
-  FaEdit,
+  FaCubes,
   FaPlusSquare,
   FaCogs,
 } from "react-icons/fa";
@@ -72,41 +72,41 @@ export default function Menu() {
         </span>
         <div className="grid grid-cols-2 gap-5 p-3">
           <Link
-            href="/shopping-cart"
-            className="flex flex-row font-semibold gap-1 items-center"
+            href=""
+            className="flex flex-row font-semibold gap-1 items-center justify-center"
           >
-            <FaPlusSquare size="20px" />
-            <label className="text-white text-sm hover:cursor-pointer">
+            <FaPlusSquare size="18px" />
+            <label className="text-white text-sm sm:text-base hover:cursor-pointer">
               Produto
             </label>
           </Link>
 
           <Link
             href="/stock-edit"
-            className="flex flex-row font-semibold gap-1 items-center"
+            className="flex flex-row font-semibold gap-1 items-center justify-center"
           >
-            <FaEdit size="20px" />
-            <label className="text-white text-sm hover:cursor-pointer">
+            <FaCubes size="20px" />
+            <label className="text-white text-sm sm:text-base hover:cursor-pointer">
               Estoque
             </label>
           </Link>
 
           <Link
             href=""
-            className="flex flex-row font-semibold gap-1 items-center"
+            className="flex flex-row font-semibold gap-1 items-center justify-center"
           >
             <FaUsers size="22px" />
-            <label className="text-white text-sm hover:cursor-pointer">
+            <label className="text-white text-sm sm:text-base hover:cursor-pointer">
               Contas
             </label>
           </Link>
 
           <Link
             href=""
-            className="flex flex-row font-semibold gap-1 items-center"
+            className="flex flex-row font-semibold gap-1 items-center justify-center"
           >
             <FaCogs size="20px" />
-            <label className="text-white text-sm hover:cursor-pointer">
+            <label className="text-white text-sm sm:text-base hover:cursor-pointer">
               Config.
             </label>
           </Link>

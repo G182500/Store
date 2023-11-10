@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import Product from "@/model/Product";
 import { getProducts } from "@/functions/getProducts";
 import { FaEdit } from "react-icons/fa";
@@ -20,7 +19,7 @@ export default async function ProductsEdit() {
       //Criar coluna ID do produto
       const newID = (
         <td
-          className="text-[12px] sm:text-sm align-middle text-center p-1 border border-white"
+          className="text-[14px] sm:text-sm align-middle text-center p-1 border border-white"
           key={`td${keyTd++}`}
         >
           {product.id}
@@ -30,7 +29,7 @@ export default async function ProductsEdit() {
       //Criar coluna NOME do produto
       const newName = (
         <td
-          className="text-[12px] sm:text-sm align-middle text-center p-1 border border-white"
+          className="text-[14px] sm:text-sm align-middle text-center p-1 border border-white"
           key={`td${keyTd++}`}
         >
           {product.nome}
@@ -40,7 +39,7 @@ export default async function ProductsEdit() {
       //Criar coluna CATEGORIA do produto
       const newCategory = (
         <td
-          className="text-[12px] sm:text-sm align-middle text-center p-1 text-xs border border-white"
+          className="text-[14px] sm:text-sm align-middle text-center p-1 text-xs border border-white"
           key={`td${keyTd++}`}
         >
           {product.tipo}
@@ -50,7 +49,7 @@ export default async function ProductsEdit() {
       //Criar coluna EDIÇÃO do produto
       const newEdit = (
         <td
-          className="text-[12px] sm:text-sm align-middle text-center p-1 text-xs border border-white"
+          className="text-[14px] sm:text-sm align-middle text-center p-1 text-xs border border-white"
           key={`td${keyTd++}`}
         >
           <button>
@@ -67,11 +66,11 @@ export default async function ProductsEdit() {
     });
   } else {
     console.log("ERRO");
+    //FAZER ALGO AQUI
   }
 
   return (
-    <div className="flex flex-col gap-4 lg:p-4 w-full lg:ml-80">
-      <Header />
+    <>
       <div className="rounded-md border-8 border-[#1b1b1b] bg-[#1b1b1b]">
         <div className="flex flex-row font-semibold gap-3 items-center p-2">
           <label className="text-white text-lg font-semibold pl-2">
@@ -82,16 +81,16 @@ export default async function ProductsEdit() {
           <table className="table w-full">
             <thead>
               <tr>
-                <th className="text-[14px] sm:text-sm align-middle text-center p-1 text-xs border border-white bg-[#2b2e2d]">
-                  Código
+                <th className="text-[16px] sm:text-sm align-middle text-center p-1 text-xs border border-white bg-[#2b2e2d]">
+                  ID
                 </th>
-                <th className="text-[14px] sm:text-sm align-middle text-center p-1 text-xs border border-white bg-[#2b2e2d]">
+                <th className="text-[16px] sm:text-sm align-middle text-center p-1 text-xs border border-white bg-[#2b2e2d]">
                   Nome
                 </th>
-                <th className="text-[14px] sm:text-sm align-middle text-center p-1 text-xs border border-white bg-[#2b2e2d]">
+                <th className="text-[16px] sm:text-sm align-middle text-center p-1 text-xs border border-white bg-[#2b2e2d]">
                   Categoria
                 </th>
-                <th className="text-[14px] sm:text-sm align-middle text-center p-1 text-xs border border-white bg-[#2b2e2d]">
+                <th className="text-[16px] sm:text-sm align-middle text-center p-1 text-xs border border-white bg-[#2b2e2d]">
                   Editar
                 </th>
               </tr>
@@ -100,6 +99,6 @@ export default async function ProductsEdit() {
           </table>
         </div>
       </div>
-    </div>
+    </>
   );
 }

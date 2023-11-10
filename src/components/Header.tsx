@@ -9,7 +9,7 @@ export default async function Header() {
         href="/login"
         className="flex flex-row font-semibold gap-1 items-center"
       >
-        <FaUser size="20px" />
+        <FaUser size="18px" />
         <label className="text-white text-sm sm:text-base hover:cursor-pointer">
           Entrar
         </label>
@@ -19,7 +19,7 @@ export default async function Header() {
         href="/carrinho"
         className="flex flex-row font-semibold gap-1 items-center"
       >
-        <FaShoppingCart size="20px" />
+        <FaShoppingCart size="18px" />
         <label className="text-white text-sm md:text-base hover:cursor-pointer">
           Carrinho
         </label>

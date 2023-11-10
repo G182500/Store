@@ -27,7 +27,7 @@ export default function Produto(props: ProdutoProps) {
         </div>
         <div className="text-[17px] text-green-500">R$ {produto.preco}</div>
         <button className="flex justify-center p-1 mt-1 text-[14px] bg-cyan-600">
-          Adicionar ao carrinho
+          Visualizar produto
         </button>
       </div>
     </div>
