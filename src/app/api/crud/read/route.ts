@@ -19,11 +19,24 @@ export async function POST(req: Request) {
       );
       //Convert the string to object
       const data: Product[] | User[] = JSON.parse(file);
-      return Response.json({
-        status: 200,
-        msg: "Todos os produtos retornados com sucesso.",
-        data: data,
-      });
+
+      //GetAll
+      if (!obj.id) {
+        return Response.json({
+          status: 200,
+          msg: "Todos itens foram retornados com sucesso.",
+          data: data,
+        });
+      }
+      //GetById
+      else {
+        const item = data.find((item) => item.id === obj.id);
+        return Response.json({
+          status: 200,
+          msg: "Item retornado com sucesso.",
+          data: item,
+        });
+      }
     } catch (error) {
       return Response.json({ status: 400, msg: "Erro " + error + "." });
     }
