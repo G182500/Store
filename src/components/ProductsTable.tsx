@@ -1,3 +1,4 @@
+import { FaEdit } from "react-icons/fa";
 import Product from "@/models/Product";
 import Link from "next/link";
 
@@ -17,27 +18,26 @@ export default async function Table(props: TableProps) {
     thHead.push(
       <th
         key={keyTh++}
-        className="text-[12px] sm:text-sm p-2 text-xs border border-white bg-[#333333]"
+        className="text-[11px] sm:text-sm p-2 border border-white bg-[#333333]"
       >
         {value}
       </th>
     );
   });
+  thHead.push(
+    <th
+      key={keyTh++}
+      className="text-[11px] sm:text-sm p-2 border border-white bg-[#333333] w-16"
+    >
+      EDITAR
+    </th>
+  )
+
 
   //Arrays para armazenar elementos <tr> e <td> - BODY
   let trElements: JSX.Element[] = [];
   let tdElements: JSX.Element[] = [];
   props.body.forEach((product: Product) => {
-    //Coluna ID do produto
-    const newID = (
-      <td
-        className="text-[10px] sm:text-sm align-middle text-center p-2 border border-white bg-[#1b1c1b]"
-        key={`td${keyTd++}`}
-      >
-        {product.id}
-      </td>
-    );
-    tdElements.push(newID);
     //Coluna NOME do produto
     const newName = (
       <td
@@ -51,7 +51,7 @@ export default async function Table(props: TableProps) {
     //Coluna PREÇO do produto
     const newPrice = (
       <td
-        className="text-[10px] sm:text-sm align-middle text-center p-2 text-xs border border-white bg-[#1b1c1b]"
+        className="text-[10px] sm:text-sm align-middle text-center p-2 border border-white bg-[#1b1c1b]"
         key={`td${keyTd++}`}
       >
         R$ {product.preco}
@@ -61,13 +61,27 @@ export default async function Table(props: TableProps) {
     //Coluna CATEGORIA do produto
     const newCategory = (
       <td
-        className="text-[10px] sm:text-sm align-middle text-center p-2 text-xs border border-white bg-[#1b1c1b]"
+        className="text-[10px] sm:text-sm align-middle text-center p-2 border border-white bg-[#1b1c1b]"
         key={`td${keyTd++}`}
       >
         {product.tipo}
       </td>
     );
     tdElements.push(newCategory);
+    //Coluna EDITAR do produto
+    const newEdit = (
+      <td
+        className="align-middle text-center p-2 border border-white bg-[#1b1c1b] w-16"
+        key={`td${keyTd++}`}
+      >
+        <button>
+          <Link href={`/product/${product.id}`}>
+            <FaEdit size="18px"></FaEdit>
+          </Link>
+        </button>
+      </td>
+    );
+    tdElements.push(newEdit);
 
     //Adicionar colunas em linha
     const newTr = <tr key={`tr${keyTr++}`}>{tdElements}</tr>;
@@ -84,3 +98,22 @@ export default async function Table(props: TableProps) {
     </table>
   );
 }
+
+
+//Criar coluna EDIÇÃO do produto
+/*const newEdit = (
+        <td
+          className="text-[10px] sm:text-sm text-center p-2 text-xs border border-white bg-[#1b1c1b]"
+          key={`td${keyTd++}`}
+        >
+          <button>
+            <Link
+              href={`/product/${product.id}`}
+              className="flex items-center justify-center"
+            >
+              <FaEdit size="16px" />
+            </Link>
+          </button>
+        </td>
+      );
+      tdElements.push(newEdit);*/

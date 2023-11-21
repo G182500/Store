@@ -3,8 +3,8 @@ import { getProducts } from "@/functions/crud/read/getProducts";
 import { FaSlidersH, FaShare } from "react-icons/fa";
 
 export default async function StockView() {
-  const resp = await getProducts();
   let products = [];
+  const resp = await getProducts();
 
   if (resp.status == 200) {
     products = resp.data;
@@ -33,28 +33,10 @@ export default async function StockView() {
         </div>
         {/*Tabela de Produtos*/}
         <ProductsTable
-          head={["ID", "NOME", "PREÇO", "CATEGORIA"]}
+          head={["NOME", "PREÇO", "CATEGORIA"]}
           body={products}
         ></ProductsTable>
       </div>
     </div>
   );
 }
-
-//Criar coluna EDIÇÃO do produto
-/*const newEdit = (
-        <td
-          className="text-[10px] sm:text-sm text-center p-2 text-xs border border-white bg-[#1b1c1b]"
-          key={`td${keyTd++}`}
-        >
-          <button>
-            <Link
-              href={`/product/${product.id}`}
-              className="flex items-center justify-center"
-            >
-              <FaEdit size="16px" />
-            </Link>
-          </button>
-        </td>
-      );
-      tdElements.push(newEdit);*/

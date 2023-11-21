@@ -3,7 +3,7 @@ import {
   FaInstagram,
   FaWhatsapp,
   FaUsers,
-  FaCubes,
+  FaList,
   FaPlusSquare,
   FaCogs,
 } from "react-icons/fa";
@@ -59,7 +59,7 @@ export default function Menu() {
                 ["Femininas", "#"],
               ]}
             />
-            <MenuItem name="Discos Compactos" href="/Discos Compactos" />
+            <MenuItem name="Discos Compactos" href="view-all/Discos Compactos" />
             <MenuItem name="Quadros" href="#" />
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function Menu() {
             href="/stock"
             className="flex flex-row font-semibold gap-1 items-center justify-center"
           >
-            <FaCubes size="20px" />
+            <FaList size="17px" />
             <label className="text-white text-sm sm:text-base hover:cursor-pointer">
               Estoque
             </label>

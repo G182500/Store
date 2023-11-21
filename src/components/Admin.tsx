@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaPlusSquare, FaUsers, FaCogs, FaCubes } from "react-icons/fa";
+import { FaPlusSquare, FaUsers, FaCogs, FaList } from "react-icons/fa";
 //npm install react-icons --save
 
 export default function Admin() {
@@ -19,7 +19,7 @@ export default function Admin() {
         href="/stock"
         className="flex flex-row font-semibold gap-1 items-center justify-center"
       >
-        <FaCubes size="20px" />
+        <FaList size="17px" />
         <label className="text-white text-sm sm:text-base hover:cursor-pointer">
           Estoque
         </label>
