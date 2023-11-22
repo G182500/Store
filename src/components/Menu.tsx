@@ -113,24 +113,24 @@ export default function Menu() {
         </div>
       </div>
 
-      {/*Terceiro Bloco*/}
+      {/*Terceiro Bloco - TELA GRANDE*/}
       <div className="hidden lg:block flex-col bg-[#1b1b1b] py-3 px-6 rounded-lg w-full">
         <span className="text-xs font-semibold opacity-50 text-white">
           REDES SOCIAIS
         </span>
-        <div className="grid grid-cols-2 p-3">
+        <div className="flex flex-col gap-5 p-3">
           <a
             href="https://www.instagram.com/o_californiaa/"
-            className="flex flex-row gap-1"
+            className="flex flex-row gap-1 items-center"
           >
             <FaInstagram size="20px" color="white" />
-            <span className="text-sm font-semibold opacity-80 text-white">
+            <span className="text-white text-sm sm:text-base hover:cursor-pointer font-semibold opacity-80">
               Instagram
             </span>
           </a>
-          <a href="" className="flex flex-row gap-1">
+          <a href="" className="flex flex-row gap-1 items-center">
             <FaWhatsapp size="20px" color="white" />
-            <span className="text-sm font-semibold opacity-80 text-white">
+            <span className="text-white text-sm sm:text-base hover:cursor-pointer font-semibold opacity-80">
               WhatsApp
             </span>
           </a>

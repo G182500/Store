@@ -19,13 +19,13 @@ export default function Produto(props: ProdutoProps) {
         width={240}
       />
       <div className="flex flex-col p-1 gap-1">
-        <div className="text-[15px] font-extralight text-white truncate">
+        <div className="text-[15px] font-light text-white truncate">
           {produto.nome}
         </div>
         <div className="text-[12px] font-extralight text-white line-clamp-1">
           {produto.descricao}
         </div>
-        <div className="text-[17px] text-green-500">R$ {produto.preco}</div>
+        <div className="text-[19px] text-green-500">R$ {produto.preco}</div>
         <button className="flex justify-center p-1 mt-1 text-[14px] bg-cyan-600">
           Visualizar produto
         </button>

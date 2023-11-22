@@ -70,7 +70,7 @@ export default function Card(props: CardProps) {
           </label>
         </Link>
       </div>
-      <div className="grid grid-cols-2 justify-start p-4 gap-6 w-full sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+      <div className="grid grid-cols-2 justify-start p-4 gap-4 w-full sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
         {produtosExibidos.map((produto) => {
           return <ProductItem produto={produto} key={produto.id} />;
         })}
