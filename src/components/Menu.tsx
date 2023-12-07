@@ -1,5 +1,4 @@
 import {
-  FaSearch,
   FaInstagram,
   FaWhatsapp,
   FaUsers,
@@ -10,7 +9,7 @@ import {
 import Link from "next/link";
 import MenuItem from "./MenuItem";
 import Image from "next/image";
-import LogoImage from "../../public/images/Spotify-Logo.png";
+import LogoImage from "../assets/images/Spotify-Logo.png";
 
 export default function Menu() {
   return (
@@ -18,9 +17,9 @@ export default function Menu() {
       {/*Primeiro Bloco*/}
       <div className="flex flex-col bg-[#1b1b1b] rounded-lg w-full py-3 px-6 gap-6">
         {/*Imagem Logo + Barra de Pesquisa*/}
-        <div className="flex flex-col sm:flex-row lg:flex-col gap-4">
+        <div className="flex flex-row lg:flex-col gap-6 items-center">
           {/*Imagem Logo*/}
-          <Link href="/" className="flex justify-center">
+          <Link href="/">
             <Image
               src={LogoImage.src}
               alt="Logo Loja"
@@ -29,15 +28,10 @@ export default function Menu() {
             />
           </Link>
           {/*Barra de Pesquisa*/}
-          <div className="flex flex-row gap-3 justify-center">
-            <input
-              className="text-black text-sm p-2 rounded-lg bg-white w-[75%] sm:w-96 lg:w-72"
-              placeholder="O que você procura?"
-            ></input>
-            <button>
-              <FaSearch size="22px" />
-            </button>
-          </div>
+          <input
+            className="text-black text-sm sm:text-base rounded-lg bg-white p-2 w-[75%] sm:w-96 lg:w-64"
+            placeholder="O que você procura?"> 
+          </input>
         </div>
         {/*Categorias*/}
         <div className="flex flex-col">

@@ -1,11 +1,7 @@
 import Image from "next/image";
 import Product from "@/models/Product";
 
-interface ProdutoProps {
-  produto: Product;
-}
-
-export default function Produto(props: ProdutoProps) {
+export default function Produto(props: {produto: Product}) {
   const produto = props.produto;
   const imagePath = `/images/${produto.img}`;
 

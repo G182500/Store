@@ -1,7 +1,7 @@
 [
   {
     "id": 11,
-    "nome": "Herzeleid (1995)",
+    "nome": "Herzeleid",
     "tipo": "Discos Compactos",
     "preco": 59.99,
     "img": "herzeleid.jpg",
@@ -9,7 +9,7 @@
   },
   {
     "id": 20,
-    "nome": "Sehnsucht (1997)",
+    "nome": "Sehnsucht",
     "tipo": "Discos Compactos",
     "preco": 59.99,
     "img": "sehnsucht.jpg",
@@ -17,7 +17,7 @@
   },
   {
     "id": 32,
-    "nome": "Rio (1982)",
+    "nome": "Rio",
     "tipo": "Discos Compactos",
     "preco": 59.99,
     "img": "rio.jpg",
@@ -25,7 +25,7 @@
   },
   {
     "id": 81,
-    "nome": "Skills In Pills (2015)",
+    "nome": "Skills In Pills",
     "tipo": "Discos Compactos",
     "preco": 49.99,
     "img": "skills.jpg",
@@ -33,7 +33,7 @@
   },
   {
     "id": 15,
-    "nome": "Atonement (2019)",
+    "nome": "Atonement",
     "tipo": "Discos Compactos",
     "preco": 69.99,
     "img": "atonement.jpg",
@@ -41,7 +41,7 @@
   },
   {
     "id": 16,
-    "nome": "Zeit (2022)",
+    "nome": "Zeit",
     "tipo": "Discos Compactos",
     "preco": 69.99,
     "img": "zeit.jpg",
