@@ -16,7 +16,7 @@ export default function Admin() {
       </Link>
 
       <Link
-        href="/stock"
+        href="/stock-edit"
         className="flex flex-row font-semibold gap-1 items-center justify-center"
       >
         <FaList size="17px" />
