@@ -1,5 +1,5 @@
 import { promises as fs } from "fs"; //read a JSON file
-import Card from "@/components/Card";
+import ProductsCard from "@/components/Cards/ProductsCard";
 
 export default async function Home() {
   //Return the content as a string
@@ -13,7 +13,7 @@ export default async function Home() {
   return (
     <>
       {/*Produtos*/}
-      <Card titulo="Discos Compactos" produtos={data} preview={true} />
+      <ProductsCard titulo="Discos Compactos" produtos={data} preview={true} />
     </>
   );
 }

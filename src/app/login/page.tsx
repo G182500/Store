@@ -1,14 +1,22 @@
+import GenericCard from "@/components/Cards/GenericCard";
+
 export default async function Login() {
   return (
-    <>
-      <div className="rounded-md border-8 border-[#1b1b1b] bg-[#1b1b1b] w-full">
-        <div className="flex flex-wrap justify-between items-center p-2 w-full">
-          <label className="text-xl font-semibold pl-2 text-white">
-            Bem vindo
-          </label>
+    <GenericCard title="Bem-vindo">
+      <div className="flex flex-row gap-2">
+        <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2">
+            <label>Usuário</label>
+            <input className="text-black text-xs rounded-lg bg-white p-2 w-60" />
+          </div>
+          <div className="flex flex-col gap-2">
+            <label>Senha</label>
+            <input className="text-black text-xs rounded-lg bg-white p-2 w-60" />
+            <label className="text-sm">Esqueci minha senha</label>
+          </div>
         </div>
-        <div className="grid grid-cols-2 justify-start p-4 gap-6 w-full sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"></div>
+        
       </div>
-    </>
+    </GenericCard>
   );
 }
