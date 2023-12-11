@@ -9,7 +9,6 @@ import {
 import Link from "next/link";
 import MenuItem from "./MenuItem";
 import Image from "next/image";
-import LogoImage from "../assets/images/Spotify-Logo.png";
 
 export default function Menu() {
   return (
@@ -21,7 +20,7 @@ export default function Menu() {
           {/*Imagem Logo*/}
           <Link href="/">
             <Image
-              src={LogoImage.src}
+              src={"/images/Spotify-Logo.png"}
               alt="Logo Loja"
               height={70}
               width={140}
