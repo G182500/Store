@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Admin from "@/components/Admin";
-import Menu from "@/components/Menu";
+import Menu from "@/components/Menu/Menu";
 import Header from "@/components/Header";
 import "./globals.css";
 

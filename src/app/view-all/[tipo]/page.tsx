@@ -1,4 +1,4 @@
-import Card from "@/components/Card";
+import Card from "@/components/Cards/ProductsCard";
 import { promises as fs } from "fs";
 
 export default async function ViewAll({

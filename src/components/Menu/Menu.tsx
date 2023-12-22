@@ -7,7 +7,7 @@ import {
   FaCogs,
 } from "react-icons/fa";
 import Link from "next/link";
-import MenuItem from "./MenuItem";
+import Category from "./Category";
 import Image from "next/image";
 
 export default function Menu() {
@@ -38,22 +38,22 @@ export default function Menu() {
             CATEGORIAS
           </span>
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-1 w-full gap-2 lg:p-3">
-            <MenuItem
+            <Category
               name="Acessórios"
               subItens={[
-                ["Colares", "#"],
-                ["Pulseiras", "#"],
+                {name: "Colares", href: "#"},
+                {name: "Pulseiras", href: "#"}
               ]}
             />
-            <MenuItem
+            <Category
               name="Camisetas"
               subItens={[
-                ["Masculinas", "#"],
-                ["Femininas", "#"],
+                {name: "Masculinas", href: "#"},
+                {name: "Femininas", href: "#"}
               ]}
             />
-            <MenuItem name="Discos Compactos" href="view-all/Discos Compactos" />
-            <MenuItem name="Quadros" href="#" />
+            <Category name="Discos Compactos" href="view-all/Discos Compactos" />
+            <Category name="Quadros" href="#" />
           </div>
         </div>
       </div>
