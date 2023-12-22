@@ -2,12 +2,12 @@ import { FaEdit } from "react-icons/fa";
 import Product from "@/models/Product";
 import Link from "next/link";
 
-interface TableProps {
+interface ProductsTableProps {
   head: string[];
   body: Product[];
 }
 
-export default async function Table(props: TableProps) {
+export default async function ProductsTable(props: ProductsTableProps) {
   let keyTh = 1;
   let keyTr = 1;
   let keyTd = 1;

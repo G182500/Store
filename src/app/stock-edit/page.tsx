@@ -1,5 +1,5 @@
 import GenericCard from "@/components/Cards/GenericCard";
-import ProductsTable from "@/components/TableProducts";
+import ProductsTable from "@/components/Tables/Products";
 import { getProducts } from "@/functions/crud/read/getProducts";
 import { FaSlidersH, FaShare } from "react-icons/fa";
 
@@ -16,6 +16,7 @@ export default async function StockView() {
 
   return (
     <GenericCard title="Estoque">
+      <div className="flex flex-col justify-start p-4 gap-4 w-full">
         {/*Tabela de Produtos*/}
         <ProductsTable
           head={["NOME", "CATEGORIA", "PREÇO"]}
@@ -30,6 +31,7 @@ export default async function StockView() {
           <button className="flex flex-row items-center p-2 gap-1 text-[12px] sm:text-sm rounded-md bg-cyan-600">
             <FaShare size="16px" /> Exportar arquivo
           </button>
+        </div>
       </div>
     </GenericCard>
   );

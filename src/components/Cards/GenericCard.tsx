@@ -11,9 +11,7 @@ export default function GenericCard(props: CardProps) {
           {props.title.toUpperCase()}
         </label>
       </div>
-      <div className="flex flex-col justify-start p-4 gap-4 w-full">
-        {props.children}
-      </div>
+      {props.children}
     </div>
   );
 }
