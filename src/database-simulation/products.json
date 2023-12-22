@@ -1,7 +1,7 @@
 [
   {
     "id": 11,
-    "nome": "Herzeleid",
+    "nome": "Herzeleid - Rammstein",
     "tipo": "Discos Compactos",
     "preco": 59.99,
     "img": "herzeleid.jpg",
@@ -9,7 +9,7 @@
   },
   {
     "id": 20,
-    "nome": "Sehnsucht",
+    "nome": "Sehnsucht - Rammstein",
     "tipo": "Discos Compactos",
     "preco": 59.99,
     "img": "sehnsucht.jpg",
@@ -17,7 +17,7 @@
   },
   {
     "id": 32,
-    "nome": "Rio",
+    "nome": "Rio - Duran Duran",
     "tipo": "Discos Compactos",
     "preco": 59.99,
     "img": "rio.jpg",
@@ -25,7 +25,7 @@
   },
   {
     "id": 81,
-    "nome": "Skills In Pills",
+    "nome": "Skills In Pills - Lindemann",
     "tipo": "Discos Compactos",
     "preco": 49.99,
     "img": "skills.png",
@@ -33,7 +33,7 @@
   },
   {
     "id": 15,
-    "nome": "Atonement",
+    "nome": "Atonement - Killswitch Engage",
     "tipo": "Discos Compactos",
     "preco": 69.99,
     "img": "atonement.jpg",
@@ -41,7 +41,7 @@
   },
   {
     "id": 16,
-    "nome": "Zeit",
+    "nome": "Zeit - Rammstein",
     "tipo": "Discos Compactos",
     "preco": 69.99,
     "img": "zeit.jpg",

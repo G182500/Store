@@ -6,7 +6,7 @@ export default function Admin() {
   return (
     <div className="grid grid-cols-4 lg:hidden bg-[#1b1b1b] rounded-lg gap-5 py-4 px-6">
       <Link
-        href=""
+        href="/product/new"
         className="flex flex-row font-semibold gap-1 items-center justify-center"
       >
         <FaPlusSquare size="18px" />

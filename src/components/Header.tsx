@@ -16,7 +16,7 @@ export default async function Header() {
       </Link>
 
       <Link
-        href="/carrinho"
+        href="/shopping-cart"
         className="flex flex-row font-semibold gap-1 items-center"
       >
         <FaShoppingCart size="18px" />

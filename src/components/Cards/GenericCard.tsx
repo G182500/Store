@@ -1,10 +1,8 @@
-"use client";
-
 type CardProps = {
   title: string;
   children: React.ReactNode;
 }
-
+//Used to display product previews on the homepage
 export default function GenericCard(props: CardProps) {
   return (
     <div className="rounded-md border-8 border-[#1b1b1b] bg-[#1b1b1b] w-full">

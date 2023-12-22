@@ -65,7 +65,7 @@ export default function Menu() {
         </span>
         <div className="grid grid-cols-2 gap-5 p-3">
           <Link
-            href=""
+            href="/product/new"
             className="flex flex-row font-semibold gap-1 items-center justify-center"
           >
             <FaPlusSquare size="18px" />

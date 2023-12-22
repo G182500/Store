@@ -9,7 +9,7 @@ type ProductsProps = {
   produtos: Product[];
   preview: boolean;
 }
-
+//Used to display only the products of a specific category
 export default function ProductsCard(props: ProductsProps) {
   const [maxItens, setMaxItens] = useState(1);
 
@@ -24,13 +24,10 @@ export default function ProductsCard(props: ProductsProps) {
       else if (screenWidth >= 1280 && screenWidth < 1535) setMaxItens(5); //xl
       else setMaxItens(6); //2xl
     }
-
     //Adicionar ouvinte de redimensionamento
     window.addEventListener("resize", handleResize);
-
     //Chamar handleResize inicialmente para definir os valores iniciais
     handleResize();
-
     //Remover ouvinte de redimensionamento ao desmontar o componente
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -52,9 +49,7 @@ export default function ProductsCard(props: ProductsProps) {
         }
       }
     }
-  } else {
-    produtosExibidos = props.produtos;
-  }
+  } else produtosExibidos = props.produtos;
 
   return (
     <div className="rounded-md border-8 border-[#1b1b1b] bg-[#1b1b1b] w-full">
